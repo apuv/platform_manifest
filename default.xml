@@ -7,11 +7,19 @@
            revision="refs/tags/android-6.0.1_r24" />
 
   <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
+           fetch="https://github.com" />
+           
+  <remote name="cm"
+          fetch="git://github.com/CyanogenMod"
+          revision="stable/cm-13.0-ZNH2K"
+          review="review.cyanogenmod.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+           
+  <remote  name="apuv"
+	   fetch="https://github.com/apuv"
+	   revision="stable/cm-13.0-ZNH2K" />           
 
   <default revision="refs/heads/stable/cm-13.0-ZNH2K"
            remote="github"
@@ -19,9 +27,10 @@
            sync-j="4" />
 
 <!-- BEGIN CYANOGENMOD -->
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
+  <project path="build" name="android_build" groups="pdk" remote="apuv">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="android" name="platform_manifest" remote="apuv"/>
   <project path="android" name="CyanogenMod/android" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
