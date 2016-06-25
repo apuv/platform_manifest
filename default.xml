@@ -22,7 +22,7 @@
 	   revision="stable/cm-13.0-ZNH2K" />
 	   
   <remote  name="bitbucket" 
-           fetch="ssh://git@bitbucket.org/UBERTC"/>
+           fetch="https://theapu@bitbucket.org/theapu"/>
 
 
   <default revision="refs/heads/stable/cm-13.0-ZNH2K"
@@ -570,8 +570,8 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.8" name="arm-eabi-uber-4.8" remote="apuv" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.9" name="arm-eabi-uber-4.9" remote="apuv" revision="master" />
 -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-5.3" name="arm-linux-androideabi-5.3" remote="bitbucket" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-5.3" name="arm-eabi-5.3" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-5.3" name="arm-linux-androideabi-uber-5.3" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-5.3" name="arm-eabi-uber-5.3" remote="bitbucket" revision="master" />
 <!-- END UBERTC -->
 
 </manifest>
