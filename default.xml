@@ -565,13 +565,12 @@
 <!-- END AOSP -->
 
 <!-- EXPERIMENTAL UBERTC -->
-<!--
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-4.9" name="arm-linux-androideabi-uber-4.9" remote="apuv" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.8" name="arm-eabi-uber-4.8" remote="apuv" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.9" name="arm-eabi-uber-4.9" remote="apuv" revision="master" />
--->
+<!--
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-5.3" name="arm-linux-androideabi-uber-5.3" remote="bitbucket" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-5.3" name="arm-eabi-uber-5.3" remote="bitbucket" revision="master" />
+  -->
 <!-- END UBERTC -->
 
 </manifest>
