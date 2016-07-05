@@ -564,13 +564,22 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
-<!-- EXPERIMENTAL UBERTC -->
+<!-- Device/Kernel -->
+  <project name="apuv/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="stable/cm-13.0-ZNH2K" />
+  <project name="apuv/android_kernel_oneplus_msm8974" path="kernel/oneplus/resurrectedkernel" remote="github" revision="marshmallow" />
+  <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
+  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
+<!-- End Device/Kernel --> 
+
+<!-- UBERTC 4.9 -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-4.9" name="arm-linux-androideabi-uber-4.9" remote="apuv" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.9" name="arm-eabi-uber-4.9" remote="apuv" revision="master" />
+<!-- EXPERIMENTAL UBERTC 5.3 -->
 <!--
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-5.3" name="arm-linux-androideabi-uber-5.3" remote="bitbucket" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-5.3" name="arm-eabi-uber-5.3" remote="bitbucket" revision="master" />
-  -->
+-->
 <!-- END UBERTC -->
 
 </manifest>
