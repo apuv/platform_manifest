@@ -7,9 +7,8 @@
            revision="refs/tags/android-6.0.1_r61" />
 
   <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />           
-           
+           fetch="https://github.com" />
+                      
   <remote name="cm"
           fetch="git://github.com/CyanogenMod"
           revision="stable/cm-13.0-ZNH5Y"
