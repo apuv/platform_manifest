@@ -1,10 +1,10 @@
 YACMR
 ===========
 
-YACMR is based on cm 13 stable branch cm-13.0-ZNH2K for OnePlus One. There are no UI customizations added to this ROM. Only changes from CM are
+YACMR is based on cm 13 stable branch cm-13.0-ZNH5Y for OnePlus One. There are no UI customizations added to this ROM. Only changes from CM are
 
 (1) OpenDelta updater is used instead of CMupdater.
+(2) UBERTC 5.3 used for building
+(3) Resurrected Kernal used insteaad of CM 13 Kernel
 
-(2) UBERTC 4.8 (Kernel) and 4.9 (ROM) are used for building (Since 20160616 build)
-
-Only branch stable/cm-13.0-ZNH2K is maintained/upstream merged.
+Only branch stable/cm-13.0-ZNH5Y is maintained/upstream merged.
