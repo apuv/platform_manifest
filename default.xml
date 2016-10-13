@@ -7,23 +7,11 @@
            revision="refs/tags/android-6.0.1_r61" />
 
   <remote  name="github"
-           fetch="https://github.com" />
-           
-  <remote name="cm"
-          fetch="git://github.com/CyanogenMod"
-          revision="stable/cm-13.0-ZNH5Y"
-          review="review.cyanogenmod.org" />
+           fetch=".."
+           review="review.cyanogenmod.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
-           
-  <remote  name="apuv"
-	   fetch="https://github.com/apuv"
-	   revision="stable/cm-13.0-ZNH5Y" />
-	   
-  <remote  name="bitbucket" 
-           fetch="https://theapu@bitbucket.org/theapu"/>
-
 
   <default revision="refs/heads/stable/cm-13.0-ZNH5Y"
            remote="github"
@@ -31,10 +19,10 @@
            sync-j="4" />
 
 <!-- BEGIN CYANOGENMOD -->
-  <project path="build" name="android_build" groups="pdk" remote="apuv">
+  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="platform_manifest" remote="apuv"/>
+  <project path="android" name="CyanogenMod/android" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
@@ -245,7 +233,7 @@
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" groups="pdk-fs" />
   <project path="packages/apps/Screencast" name="CyanogenMod/android_packages_apps_Screencast" />
-  <project path="packages/apps/Settings" name="apuv_packages_apps_Settings" groups="pdk-fs" remote="apuv" revision="stable/cm-13.0-ZNH5Y"/>
+  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" groups="pdk-fs" />
   <project path="packages/apps/SetupWizard" name="CyanogenMod/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/Snap" name="CyanogenMod/android_packages_apps_Snap" />
@@ -302,9 +290,8 @@
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
-  <project path="vendor/cm" name="android_vendor_apuv" remote="apuv" revision="stable/cm-13.0-ZNH5Y"/>
+  <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
-  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="apuv" revision="cm-13.0"/>
 
 <!-- CMSDK SAMPLES -->
   <project path="vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider" name="CyanogenMod/android_packages_apps_OpenWeatherMapProvider" />
@@ -500,7 +487,6 @@
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" remote="aosp" />
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
-  <project path="packages/apps/OpenDelta" name="apuv_packages_apps_OpenDelta" remote="apuv" revision="android-6.0" />
   <project path="pdk" name="platform/pdk" groups="pdk" remote="aosp" />
   <project path="platform_testing" name="platform/platform_testing" remote="aosp" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" remote="aosp" />
@@ -536,22 +522,5 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
-
-<!-- Device/Kernel -->
-  <project name="apuv/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="stable/cm-13.0-ZNH5Y" />
-  <project name="apuv/android_kernel_oneplus_msm8974" path="kernel/oneplus/resurrectedkernel" remote="github" revision="marshmallow" />
-  <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
-  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
-<!-- End Device/Kernel --> 
-
-<!-- UBERTC 4.9 -->
-<!-- 
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-4.9" name="arm-linux-androideabi-uber-4.9" remote="apuv" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.9" name="arm-eabi-uber-4.9" remote="apuv" revision="master" />-->
-<!-- EXPERIMENTAL UBERTC 5.3 -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-5.3" name="arm-linux-androideabi-uber-5.3" remote="bitbucket" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-uber-5.3" name="arm-eabi-uber-5.3" remote="bitbucket" revision="master" />
-<!-- END UBERTC -->
 
 </manifest>
