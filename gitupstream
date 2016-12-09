@@ -1,0 +1,5 @@
+git fetch
+git pull
+git remote add upstream $1
+git fetch upstream
+git pull upstream $2
