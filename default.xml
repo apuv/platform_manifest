@@ -522,7 +522,7 @@
 
   <include name="snippets/cm.xml" />
 
-  <project path="vendor/cm" name="android_vendor_apuv" remote="apuv" revision="stable/cm-14.1"/>
+  <project path="vendor/cm" name="android_vendor_apuv" remote="apuv" revision="cm-14.1"/>
   <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="apuv" revision="cm-14.1"/>
 
 <!-- Device/Kernel -->
