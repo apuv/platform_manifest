@@ -527,10 +527,9 @@
 
 <!-- Device/Kernel -->
   <project name="apuv/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="cm-14.1" />
-  <!--<project name="apuv/android_kernel_oneplus_msm8974" path="kernel/oneplus/resurrectedkernel" remote="github" revision="nougat7.1" />-->
+  <project name="apuv/android_kernel_oneplus_msm8974" path="kernel/oneplus/resurrectedkernel" remote="github" revision="nougat7.1" />
   <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" />
-  <!--<project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />-->
-  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/resurrectedkernel" remote="github" />
+  <project name="CyanogenMod/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" />
   <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
 <!-- End Device/Kernel --> 
 
