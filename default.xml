@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.1_r6" />
-
   <remote  name="github"
            fetch="https://github.com" />
 
@@ -24,6 +19,10 @@
  <remote  name="bitbucket" 
            fetch="https://theapu@bitbucket.org/theapu"/>
 
+ <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-7.1.1_r6" />
 
   <default revision="refs/heads/cm-14.1"
            remote="github"
